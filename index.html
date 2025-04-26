@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Boy Burguers</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="navbar">
+            <!-- Click dropdown for mobile view -->
+             <!-- <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">|||</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Mission</a>
+                    <a href="#menu">Product</a>
+                    <a href="#about">Our Team</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+             </div> -->
+            <div class="sexy-container">
+                <div class="image-container">
+                    <img src="images/burger-logo-free-vector.jpg">
+                </div>
+                <h2>Big Boy Burgers</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Mission</a></li>
+                    <li><a href="#menu">Product</a></li>
+                    <li><a href="#about">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div id="text">
+            <h2>This will for sure fill you up</h2>
+            <h3>The best burgers in town</h3>
+        </div>
+        <div id="image">
+            <img src="images/The-Mack-Burger-recipe-scaled.jpg" alt="Big Burger">
+        </div>
+    </div>
+</body>
+</html>
