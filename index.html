@@ -5,27 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Boy Burguers</title>
     <link rel="stylesheet" href="index.css">
-    <script>
-        /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -35,17 +14,6 @@ window.onclick = function(event) {
 <body>
     <div class="container1">
         <div class="navbar">
-            <!-- Click dropdown for mobile view -->
-             <!-- <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">|||</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Mission</a>
-                    <a href="#menu">Product</a>
-                    <a href="#about">Our Team</a>
-                    <a href="#contact">Contact</a>
-                </div>
-
-             </div> -->
             <div class="sexy-container">
                 <div class="image-container">
                     <img src="images/burger-logo-free-vector.jpg">
@@ -64,12 +32,75 @@ window.onclick = function(event) {
     </div>
 
     <div class="container2">
-        <div id="text">
-            <h2>This will for sure fill you up</h2>
-            <h3>The best burgers in town</h3>
+        <div class="hero-text">
+            <h1>We know you're hungry</h1>
+            <p>This will fill you up</p>
+            <button>Order Now</button>
         </div>
-        <div id="image">
-            <img src="images/The-Mack-Burger-recipe-scaled.jpg" alt="Big Burger">
+    </div>
+
+    <div class="container3">
+        <div id="missiontext">
+            <h1>Our Mission</h1>
+            <p>
+                Big Boy Burgers is a family owned business that has been serving the community for over 20 years. 
+                We make bellies full by cooking the best burgers made with fresh ingredients and a lot of meat. No one should be hungry after eating one our burgers.
+            </p>
+        </div>
+        <div id="missionimage">
+            <img src="images/free-photo-of-burgers.jpeg" alt="Burger with fries">
+        </div>
+    </div>
+
+    <div class="container4">
+        <h1>The Favorites</h1>
+        <div class="favoritescontainer">
+            <div class="favorite f1">
+                <div class="imgcontainer">
+                    <img src="images/BBQ-Bacon-Double-Cheeseburger-Wide.jpg" alt="BBQ Bacon">
+                </div>
+                <p>BBQ Bacon Burger</p>
+                <button>Order</button>
+            </div>
+            <div class="favorite f2">
+                <div class="imgcontainer">
+                    <img src="images/Double-Smashburgersforweberdotcom.avif" alt="Double Smashed">
+                </div>
+                <p>Smashed Double Decker</p>
+                <button>Order</button>
+            </div>
+            <div class="favorite f3">
+                <div class="imgcontainer">
+                    <img src="images/chiken2.webp" alt="Chikenator">
+                </div>
+                <p>The Chikenator</p>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container5">
+        <h1>Our Team</h1>
+        <div class="team t1">
+            <div class="imgcontainer">
+                <img src="images/owner.jpg" alt="Owner">
+            </div>
+            <p>Mark Gutierrez</p>
+            <p>Owner</p>
+        </div>
+        <div class="team t2">
+            <div class="imgcontainer">
+                <img src="images/Cook.jpg" alt="Cook">
+            </div>
+            <p>Clark Miller</p>
+            <p>Head Cook</p>
+        </div>
+        <div class="team t3">
+            <div class="imgcontainer">
+                <img src="images/Deliveryguy.jpg" alt="Delivery Guy">
+            </div>
+            <p>Dwayne García</p>
+            <p>Delivery guy</p>
         </div>
     </div>
 </body>
